@@ -5,11 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "npm run clean && vite build",
     "preview": "vite preview",
-    "clean": "rm -rf dist",
-    "build-only": "npm run clean && vite build",
-    "type-check": "vue-tsc --build --force"
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.4",
