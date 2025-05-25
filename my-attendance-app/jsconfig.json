@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
+// This configuration file sets up path aliases for the project, allowing you to use `@/` to refer to the `src` directory.
